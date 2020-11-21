@@ -21,10 +21,11 @@ http://modularscale.com/
 */
 
 html {
-    height: 100%;
-    max-height: 100%;
+    /* height: 100%; */
+    /* max-height: 100%; */
     font-size: 112.5%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  scroll-behavior: smooth;
 }
 
 body {
@@ -33,8 +34,8 @@ body {
     -ms-font-feature-settings: 'kern' 1;
     -o-font-feature-settings: 'kern' 1;
     font-feature-settings: 'kern' 1;
-    height: 100%;
-    max-height: 100%;
+    /* height: 100%; */
+    /* max-height: 100%; */
     width: 80%;
     max-width: 650px;
     margin: 0 auto;
@@ -42,7 +43,7 @@ body {
 	font-weight: 300;
     font-size: 1rem;
     line-height: 1.7;
-    color: #3A4145;
+    color: #272025;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -124,18 +125,21 @@ hr {
 
 /* Links */
 .post a {
-    color: #FC7E0F;
+    color: #d04186;
+    text-decoration: none;
+}
+
+.post a:visited {
+    color:  #d87ea9;
     text-decoration: none;
 }
 
 .post a:hover {
+    color: #FC7E0F;
     text-decoration: underline;
 }
 
-.post a:visited {
-    color: #9EABB3;
-    text-decoration: none;
-}
+
 
 a.read-more, a.read-more:hover, a.read-more:visited {
     color: #FC7E0F;	/* #DA1F15, #F17F33 */
@@ -210,6 +214,26 @@ dl dd {
     margin-bottom: 1em
 }
 
+
+.paper {
+	background-image: url("../../img/paper0.jpg");
+    /* background-repeat: no-repeat; */
+    background-attachment: fixed;  
+    background-size: 700px;
+    padding-left: 30px;
+    padding-right: 30px;
+    /* margin-top: 10px; */
+    /* margin-bottom: 10px; */
+    margin: 15px auto;
+    width: 100%;
+    /* box-shadow: #000; */
+    box-shadow: 0 0 6px #888888;
+    /* border: 1px solid; */
+    /* display: inline-block; */
+    /* float:left; */
+
+}
+
 /*	==========================================================================
 	Blog header
 	========================================================================== */
@@ -217,8 +241,11 @@ dl dd {
 .main-header {
     position: relative;
     width: 100%;
-    padding: 2rem 0;
-    margin-bottom: 1rem;
+    /* width: 600; */
+    padding-top: 0.8rem;
+    /* padding-top: 2rem; with hr */
+    padding-bottom: 0rem;
+    /* margin-bottom: 1rem; */
     text-align: center;
     vertical-align: middle;
     overflow: hidden;
@@ -232,48 +259,76 @@ dl dd {
 .blog-title {
     margin: 0;
     padding: 0;
-    font-family: "Lato", sans-serif;
+    padding-top: 0.4em;
+    font-family: 'Tangerine', cursive;
+    /* font-family: "Lato", sans-serif; */
 	font-weight: 300;
-    font-size: 2.887rem;
+    /* text-transform: uppercase; */
+    font-size: 4rem;
     vertical-align: middle;
     line-height: 1;
 }
 
 .blog-title a {
-	font-color: inherit;
+	color: inherit;
 }
 
 .blog-description {
     margin: 0;
-    font-size: 0.889rem;
-    font-family: "Lato", sans-serif;
-    text-transform: uppercase;
+    margin-top: -25px;
+    font-size: 3.3rem;
+    font-family: 'Tangerine', cursive;
+    /* font-size: 2rem; */
+    /* font-family: "Lato", sans-serif; */
+    /* font-style: italic; */
+    /* text-transform: uppercase; */
     letter-spacing: 0;
-    color: #9EABB3;
+    /* color: #766670; */
     font-weight: 300;
 }
 
+
+.imgcpl {
+    width: 600px;
+}
+
+.imgdetails {
+    width: 400px;
+}
 /*	==========================================================================
 	Navigation
 	========================================================================== */
 
 .nav {
-	margin-top: 1rem;
+    /* margin-top: 1rem; */
+    /* padding-bottom: 1em; */
 }
 
 .nav {
 	text-transform: uppercase;
 	font-size: .889rem;
 }
+    /* color:  #d87ea9;
+    color: #FC7E0F; */
 
 .nav a {
 	margin: 0 0.5rem;
-	color: #9EABB3;
+	color:#d04186;
+	/* color: #9EABB3; */
 	text-decoration: none;
+    padding: 4px;
+    border-radius: 3px;
+    /* border:solid 2px #9EABB3; */
+    /* background:rgba(0, 0, 0, 0.05); */
 }
 
 .nav a:hover {
-	color: #FC7E0F;
+	/* color: #FC7E0F; */
+	/* color:#d04186; */
+	color: #ffffff;
+    /* border:none; */
+    background: #80486557;
+    /* font-weight: bold; */
 }
 
 a.nav-current {
@@ -283,6 +338,22 @@ a.nav-current {
 a.nav-home, a.nav-blog {
 	color: #9EABB3;
 }
+
+/* .nav-button {
+    /* width: 150px; */
+    /* height: 50px; */
+    /* border:none; */
+    /* text-align:center; */
+    /* padding: 4px; */
+    /* border:solid 2px #9EABB3; */
+    /* border-radius: 3px;
+    background: rgba(255, 255, 255,0);
+} */
+
+/* .nav-button:hover {
+    background:black;
+    color:white; 
+} */
 
 /*	==========================================================================
 	Site footer
@@ -342,7 +413,7 @@ a.nav-home, a.nav-blog {
 .post {
     position: relative;
     margin: 2rem auto;
-    padding-bottom: 4rem;
+    /* padding-bottom: 4rem; */
     word-break: break-word;
     hyphens: auto;
 }
@@ -353,12 +424,19 @@ a.nav-home, a.nav-blog {
 
 .post-title {
 	margin-bottom: 0;
-	line-height: 1;
+    line-height: 1;
+    /* text-align: center; */
+    text-transform: uppercase;
 }
 
 .post-meta {
 	text-transform: uppercase;
 	font-size: .79rem;
+}
+
+.post-content {
+    height: auto;
+    /* margin-bottom: 100px; */
 }
 
 .post-footer {
@@ -399,6 +477,11 @@ a.nav-home, a.nav-blog {
 	max-width: 100%;	/* Keep image contained in width of post */
 	margin: 0 auto 0.5rem;
 }
+
+/* .imgcpl {
+    padding-bottom: -10em;
+} */
+
 
 .footnotes-sep {
 	display: none;
@@ -469,6 +552,31 @@ a.nav-home, a.nav-blog {
 	width: 100%;
 	height: 100%;
 }
+
+.gmaps {
+  /* width: 70%; */
+  /* padding: 10%; */
+  /* border:0; */
+  margin: auto;
+  /* display: block; */
+	position: relative;
+	width: 70%;
+	padding-top: 55%;
+	height: 0;
+	overflow: hidden;
+}
+.gmaps iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 95% !important;
+}
+
+/* .imgloc {
+    float: right;
+} */
+	
 
 /*	==========================================================================
 	Tags
@@ -550,17 +658,25 @@ a.nav-home, a.nav-blog {
    12. Media Queries - Smaller than 500px
    ========================================================================== */
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
 
 	html {
 		font-size: 100%;
 	}
 
    .blog-title {
-		font-size: 2.281rem;
+		font-size: 4rem;
 	}
 	
 	.blog-description {
-	   font-size: 0.889rem;
-	}
+	   font-size: 3rem;
+    }
+    
+    .imgcpl {
+        width: 400px;
+    }
+    
+    .imgdetails {
+        width: 300px;
+    }
 }
