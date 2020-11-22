@@ -38,7 +38,7 @@ body {
     /* max-height: 100%; */
     width: 100%;
     min-width: 300px;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     font-family: "Lato", sans-serif;
 	font-weight: 300;
@@ -47,6 +47,14 @@ body {
     color: #272025;
 
     overflow-x: auto;
+
+    
+    /* background-color: #b5e4a3; */
+    /* background-color: #80bd67; */
+	background-image: url("../../img/palm_pattern2.jpg");
+    /* background-repeat: no-repeat; */
+    background-attachment: fixed;  
+    background-size: 1000px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -231,7 +239,7 @@ dl dd {
     width: 70%;
     /* transform: translateX(-5%); */
     /* box-shadow: #000; */
-    box-shadow: 0 0 6px #888888;
+    box-shadow: 0 0 6px #000000;
     /* border: 1px solid; */
     /* display: inline-block; */
     /* float:left; */
@@ -301,11 +309,13 @@ dl dd {
 .imgcpl {
     /* width: 600px; */
     width: 100%;
+    max-width: 600px;
 }
 
 .imgdetails {
     /* width: 400px; */
     width: 60%;
+    max-width: 400px;
 }
 /*	==========================================================================
 	Navigation
